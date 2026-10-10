@@ -1,13 +1,19 @@
 // ============================================
-// DATA PORTOFOLIO
-// Setiap ID diambil dari link Google Drive di brief.
-// Video ditampilkan langsung via Google Drive preview embed (bukan redirect).
+// KINARYA — script.js (halaman utama)
 // ============================================
-const ADMIN_WA = "6289542969"+"0690"; // nomor admin Kinarya, format 62xxxxxxxxxx
 
-function driveEmbedUrl(fileId){
-  return `https://drive.google.com/file/d/${fileId}/preview`;
-}
+// Nomor admin Kinarya (format 62xxxxxxxxxx, tanpa + dan spasi).
+// Sesuai brief: +62 895 4296 90690
+// Semua tombol/link wa.me di halaman otomatis ikut nomor ini (lihat initWaLinks).
+const ADMIN_WA = "62895429690690";
+
+// ============================================
+// DATA PORTOFOLIO
+// Tiap ID diambil dari link Google Drive (bagian antara /d/ dan /view).
+// Pastikan sharing-nya "Anyone with the link".
+// Mau nambah karya baru: tambahin ID-nya ke daftar "ids" di kategori yang sesuai
+// (jangan lupa koma di antara ID).
+// ============================================
 function driveEmbedUrl(fileId){
   return `https://drive.google.com/file/d/${fileId}/preview`;
 }
@@ -18,52 +24,115 @@ function driveThumbUrl(fileId){
 const PORTFOLIO = {
   rigging: [
     { group: "VTuber Pet", ids: [
-      "111uVDqWP7Aj5dlhMolQApn3W2S9mjaWb",
-      "11uem3vBv5dXdG2i3DPg7Y0_Fj4lkNulm",
-      "1usAU1-OgSLpCoa_9pYgSiTdaSE_siTSX",
-      "1zozqECrVaYLKb3BL8P4Y_JrBxBK9hCOt"
+      "1oRF8DzHby2nBMTMfrNeTq20_oWUGVQ1_",
+      "17nOoXYi7SB69mk3ARhiP6rzn7Qus9Ml0",
+      "1zGtLvLhQCpeJLzgSjTeeHdU65yG3QcEA",
+      "1Qs61c8uo4SDSVQW91Ma9YweBLooNKsLr",
+      "1v8592K9hf1BTj1vokaL2oFMJh9MR94Cj"
     ]},
     { group: "VTuber Model", ids: [
-      "1DQp3_isutAwzptNrcZW1q-Rg20pyAe0o",
-      "1q8Jdz1AsdZir4LT282zhpsqkHwtI9Go4",
-      "1B_BtUSIxT2HMdl0_uLXyPVe47kv8bPEx",
-      "1EYceLS6DVXEm-TlHYwLmALa5R4kC5g37",
-      "1BZHj77Fr-AukQDyrMhpcv1kPeftXTw_c"
+      "1hfc1-IIIshrGfZOIv2kGZKXYNe99Qbmg",
+      "1ynCjSOKq1RoZ_wSKhFCSUcLr-OlyqIcR",
+      "1GwSOVyD6xE2k8d4yIe-4A6OZrlXHXmy9",
+      "10LGU0tYY3VOG8AkjtSfiVJsqQqPqs6Az"
     ]},
-    { group: "Animasi Overlays", ids: [
-      "17N9k8f9gCmNDJK-QUCgQGwCVlZ3Y_nro","18Xx5jYR-R7ll6oDrYK4XqPYLo5gSqdk2",
-      "12WfSdgpD7eS8C89xsKYznMdXTtOtHHXr","1ELUBNlQygOyWFhQremV38TvQ6UxDYTVc",
-      "1UeR6uGwqfkj_2JqNpVlVZCxwN0qxtjOX","1vyvrkjYTTboTyZ3n5VH_JPi1EQAfwmfI",
-      "1yhxZLQBKQ2W0SwZ0hORJ1UwfZ2982QAi","1LZx71xxdCegf6P3jf94m36Am3Lc4jebJ",
-      "1AYrQ7ZUgfgVIGTwRNLnjGBHto2FF4M-d","1ZUkeXcuwDSkBmI1ECpQw_uWI8Wdy0xi8",
-      "1iO29ZgdLdRlIh_pL2Odu2VGxJv-P1gaP","1YT2Ip7RnaEy1hHCdCyAh-z6TFEQ264UH"
+    { group: "Overlay · Starting Soon", ids: [
+      "17N9k8f9gCmNDJK-QUCgQGwCVlZ3Y_nro",
+      "1IMQCWBkduDrPThcvHvL3jJrG04uTgYpI",
+      "11SdAAbNTiUMthYKqoLf3RbG2JGVycmyK",
+      "1Qt67Tp7Jpn9vENSO_1mxrzJiGWI77ib5",
+      "1_3USYri6g_pfx-FxxAWbYgekrCNQ71ZC",
+      "16ewDmTFFZ6MNXzYJyNi2TOTSpTDKFhbs",
+      "19v-_p0hI7QtTF2F6x9qtHAlFOhSJNNqJ",
+      "1RU3CN3aNIWa-g7Q5fAETbMdTcgEp40xL",
+      "1uxU-i12K32LT-rUulphPD6uRd3I4OinO",
+      "1DuxoHGPEwJP0qTQvfmpaEs7dOP0ZS5kE",
+      "1W9zgWlcqdhPdY7qjoZdzgm0DQ8WwBrSk",
+      "14nLXHIH5G0lSS5RfF902pv2Hy4vT7-8g",
+      "1nJwC-ibKtD0VezuBWU3R7uZbEq48FIbL"
+    ]},
+    { group: "Overlay · Be Right Back", ids: [
+      "1j5xi79PBXHlmRl3-AmA8QWYmlR9a-Pr2",
+      "1IHCTsLJoRVIEKYiNwALPa4B8ZTwaFVzo",
+      "1iO29ZgdLdRlIh_pL2Odu2VGxJv-P1gaP"
+    ]},
+    { group: "Overlay · Stream End", ids: [
+      "1-LsrFZBJKUzVxbo0zZ6BgrAeFivxlLxL",
+      "1n8vHosMGhGBNB6nIjanxdDLLkrJUPBmT"
+    ]},
+    { group: "Overlay · Animation", ids: [
+      "1YAHuCMmDYUEerw0DcXGPeKbuQ_N3rb2Y"
+    ]},
+    { group: "Overlay · Icon", ids: [
+      "1nXCRti-WkUloUZ2v6-UhoQWY2xb1ig09",
+      "1NxMFZDbS03M8ZcrNpUZPAO1zb684KAdH"
+    ]},
+    { group: "Overlay · Panels", ids: [
+      "18Xx5jYR-R7ll6oDrYK4XqPYLo5gSqdk2"
+    ]},
+    { group: "Overlay · Background", ids: [
+      "12WfSdgpD7eS8C89xsKYznMdXTtOtHHXr",
+      "1vyvrkjYTTboTyZ3n5VH_JPi1EQAfwmfI",
+      "1yhxZLQBKQ2W0SwZ0hORJ1UwfZ2982QAi",
+      "1LZx71xxdCegf6P3jf94m36Am3Lc4jebJ",
+      "132B_WVGFKBl3W5NLifr52Q5MrxJtKeb9",
+      "1g5mW1E2RAmgtBFYFXbVR9iOZKUu5i1hV",
+      "1dbHgKc71kOWNJh1E6-6MwDtx08Fbeyag"
+    ]},
+    { group: "Overlay · Boobs Overlays", ids: [
+      "13LGolkyX-SXVfUKANGwhjjYJLWC8rktT",
+      "1fqSNR_24mPLQOqG_prb_i07ydV5iDAYv",
+      "1Yi_sWJzfex0oWXUp2MoMEAUib_REgjSQ",
+      "1yu4xAlGMzhoV0dh94B7EJHZ0Qs1n2soB",
+      "1rpbzqnny607JG2QFO0_1vWHz_J_6hnBW",
+      "15hakSa5Dr-2ZiCi9srUwpBeHspX7ki0y",
+      "1G2r4OnN5LIyCkFiD4hEYO15BZID7DwTr"
     ]},
     { group: "Animasi Logo", ids: [
-      "1V4NTCabxTjG4YE5wHgSx0zzCaPNxc4Fq","15QpOw8UM0wi9G9C3pe4IwW0ZjY3OSUpF",
+      "1V4NTCabxTjG4YE5wHgSx0zzCaPNxc4Fq",
+      "15QpOw8UM0wi9G9C3pe4IwW0ZjY3OSUpF",
       "17dfUF2EM1aHhy6kcvjer5zjYMY3CyzLk"
     ]},
     { group: "Animasi Emote", ids: [
-      "1gbqWqjKox0vdWj8byh--sySdWqE5qjux","18pr7FrgtKNvja6hkDnBRCMROaMHGAqDR",
-      "1AL5nZmd2R7pVLeS0yqSAS3oprVNHYwb9","1TWvyPbp8TCvJ2bRSaWVTYVZHHRMndtNQ",
-      "1imTG79VZC3XJWDWGegAhAdHaC5eUCaE-","1BQgReGQbVVzR686767h5p01L4aXzzQgq",
-      "1EKJS_1jbkROmWVUmNEpqM2TyrmXhldMm","1ICxbldVf7t98lXIplkJSE5U6wu_VZy4J",
-      "1TxrEegRxeatDxNVS_UoqXh_OKTdvNmiV","1N_AvBFqxDa2u7eb_gUpbWlNIMqWZyXQ5",
-      "1qDLeRtKg1Ab6Tt6xKizjNF8_QFxrY1hh","16Tcime2xw2i-bjeK8lmC3X27EA23lV5d",
-      "1LnygUtwcjrMF69t5GhUWqvdrRCdwMMoK","1ES4m6zIH53k2lEeABgP1qarRtpJC77yZ",
-      "1qQ6VPWQHBFsmw_8ygTdONVWjP3RGQSb_","1w6W4aOob2z-HHhDSI7aKNAaRhl4Y_dxP",
-      "1MpLe_UxRGs7mmrdwMs9F9eQ2oX3fLNA4","1Tqxi3SQ3QJ-J5BSvPR_BuEHKngoJ9NxZ",
-      "1al_KY2MZSNBQlgQbEdudfIKHN4zckvBL"
+      "1gbqWqjKox0vdWj8byh--sySdWqE5qjux",
+      "18pr7FrgtKNvja6hkDnBRCMROaMHGAqDR",
+      "1AL5nZmd2R7pVLeS0yqSAS3oprVNHYwb9",
+      "1TWvyPbp8TCvJ2bRSaWVTYVZHHRMndtNQ",
+      "1imTG79VZC3XJWDWGegAhAdHaC5eUCaE-",
+      "1BQgReGQbVVzR686767h5p01L4aXzzQgq",
+      "1EKJS_1jbkROmWVUmNEpqM2TyrmXhldMm",
+      "1ICxbldVf7t98lXIplkJSE5U6wu_VZy4J",
+      "1TxrEegRxeatDxNVS_UoqXh_OKTdvNmiV",
+      "1N_AvBFqxDa2u7eb_gUpbWlNIMqWZyXQ5",
+      "1qDLeRtKg1Ab6Tt6xKizjNF8_QFxrY1hh",
+      "16Tcime2xw2i-bjeK8lmC3X27EA23lV5d",
+      "1LnygUtwcjrMF69t5GhUWqvdrRCdwMMoK",
+      "1ES4m6zIH53k2lEeABgP1qarRtpJC77yZ",
+      "1qQ6VPWQHBFsmw_8ygTdONVWjP3RGQSb_",
+      "1w6W4aOob2z-HHhDSI7aKNAaRhl4Y_dxP",
+      "1MpLe_UxRGs7mmrdwMs9F9eQ2oX3fLNA4",
+      "1Tqxi3SQ3QJ-J5BSvPR_BuEHKngoJ9NxZ",
+      "1al_KY2MZSNBQlgQbEdudfIKHN4zckvBL",
+      "1UCzbNEzM4WVLUaxkLxDj4uvRgb1u_Axf",
+      "1JTt6rvHgjX28o_TymSMaX_2R7kQae1oX",
+      "1UE56Oida2pSo51zm9ZOjOixIPEsgr7BK"
     ]},
     { group: "Animasi Banner", ids: [
-      "169kJNAbCIqd-5V2cCiF9LI_8B_vQwebT","1dfRKvHzhkXIGXr0-0KW2bxTb-8Cf-GDy",
-      "1Nko7LCEYPRPux8H1kXXZ39zJ4uaSRcfh","1UNcT2rUJLAbmWTdVC2BTCwMOxGdFwMnh",
-      "1uGMOapRycQC9DhMRMF_Xkk3Wx5RmKBCJ","19E_YkNds6BMV2FmEY0jBBR9gJgmW6zES",
+      "169kJNAbCIqd-5V2cCiF9LI_8B_vQwebT",
+      "1dfRKvHzhkXIGXr0-0KW2bxTb-8Cf-GDy",
+      "1Nko7LCEYPRPux8H1kXXZ39zJ4uaSRcfh",
+      "1UNcT2rUJLAbmWTdVC2BTCwMOxGdFwMnh",
+      "1uGMOapRycQC9DhMRMF_Xkk3Wx5RmKBCJ",
+      "19E_YkNds6BMV2FmEY0jBBR9gJgmW6zES",
       "1XanpOSOpJ_WFWjXhQ2CSh7TJjsfZAAc-"
     ]},
     { group: "Animasi Illustration", ids: [
-      "1RqWI8FLUr2m-J7ET1kt4SaYYRZGrCMHA","19v-_p0hI7QtTF2F6x9qtHAlFOhSJNNqJ",
-      "1RU3CN3aNIWa-g7Q5fAETbMdTcgEp40xL","1ebxH_mKvnXgUumgU9i9p-i2w6uKrOEuE",
-      "1HsMSKHIkUtmkfYIztYjaQPgjwyhmnJlL"
+      "1RqWI8FLUr2m-J7ET1kt4SaYYRZGrCMHA",
+      "1ebxH_mKvnXgUumgU9i9p-i2w6uKrOEuE",
+      "1HsMSKHIkUtmkfYIztYjaQPgjwyhmnJlL",
+      "14y98UWuVvfMurUbSrEaXXFttw84HqEHl",
+      "1LUdneTxKeCZszCzwtOmEPXiiKK4mYF1Q",
+      "1uyr1ZNde-whQKUDKgIAAqWKKUvbsY3_7"
     ]}
   ],
   vroid: [
@@ -83,14 +152,14 @@ function renderPortfolio(){
       <div class="karya-group">
         <h3>${g.group} <span style="color:var(--muted);font-weight:400;font-size:.85rem;">· ${g.ids.length} karya</span></h3>
         <div class="karya-grid">
-        ${g.ids.map((id,i)=>`
-  <div class="karya-card" data-id="${id}">
-    <img class="karya-thumb" src="${driveThumbUrl(id)}" alt="${g.group} ${i+1}" loading="lazy"
-         onerror="this.style.display='none'">
-    <div class="play-overlay"><div class="play-icon">▶</div></div>
-    <div class="karya-label">${g.group} ${i+1}</div>
-  </div>
-`).join("")}
+          ${g.ids.map((id,i)=>`
+            <div class="karya-card" data-id="${id}">
+              <img class="karya-thumb" src="${driveThumbUrl(id)}" alt="${g.group} ${i+1}" loading="lazy"
+                   onerror="this.style.display='none'">
+              <div class="play-overlay"><div class="play-icon">▶</div></div>
+              <div class="karya-label">${g.group} ${i+1}</div>
+            </div>
+          `).join("")}
         </div>
       </div>
     `).join("");
@@ -112,7 +181,7 @@ function closeVideoModal(){
   document.getElementById("videoModalBox").innerHTML = "";
 }
 
-// ---------- Tabs (generic, works for karya & flow) ----------
+// ---------- Tabs (dipakai buat Karya & Alur Kerja) ----------
 function setupTabs(groupSelector){
   document.querySelectorAll(groupSelector).forEach(group=>{
     const buttons = group.querySelectorAll(".tab-btn");
@@ -128,14 +197,11 @@ function setupTabs(groupSelector){
   });
 }
 
-// ---------- Phone helper ----------
-function toWaNumber(raw){
-  let n = (raw || "").replace(/[^0-9+]/g,"");
-  if(n.startsWith("+62")) n = n.slice(1);
-  else if(n.startsWith("62")) { /* sudah pas */ }
-  else if(n.startsWith("0")) n = "62" + n.slice(1);
-  else n = "62" + n;
-  return n;
+// ---------- Semua link wa.me ikut nomor ADMIN_WA ----------
+function initWaLinks(){
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a=>{
+    a.href = `https://wa.me/${ADMIN_WA}`;
+  });
 }
 
 // ---------- Project Agreement form ----------
@@ -178,20 +244,25 @@ if(agreementForm){
   });
 }
 
+// Susun pesan WA per baris, lalu di-encode biar karakter kayak & # % gak bikin pesan kepotong
 function sendAgreementToWA(){
   if(!lastAgreement) return;
   const d = lastAgreement;
-  const text = `Halo kak Kinarya! Aku mau booking project ya~%0A%0A`+
-    `*Nama Studio:* ${d.namaStudio}%0A`+
-    `*Nama Circle:* ${d.namaCircle}%0A`+
-    `*Jenis Order:* ${d.jenisOrder}%0A`+
-    `*Deadline:* ${d.deadline}%0A`+
-    `*Total Fee:* ${d.totalFee}%0A`+
-    `*Referensi:* ${d.referensi}%0A`+
-    `*Link File:* ${d.linkFile}%0A`+
-    `*Notes:* ${d.notes}%0A%0A`+
-    `No WA aku: ${d.noWhatsapp}`;
-  window.open(`https://wa.me/${ADMIN_WA}?text=${text}`, "_blank");
+  const lines = [
+    "Halo kak Kinarya! Aku mau booking project ya~",
+    "",
+    `*Nama Studio:* ${d.namaStudio || "-"}`,
+    `*Nama Circle:* ${d.namaCircle || "-"}`,
+    `*Jenis Order:* ${d.jenisOrder || "-"}`,
+    `*Deadline:* ${d.deadline || "-"}`,
+    `*Total Fee:* ${d.totalFee || "-"}`,
+    `*Referensi:* ${d.referensi || "-"}`,
+    `*Link File:* ${d.linkFile || "-"}`,
+    `*Notes:* ${d.notes || "-"}`,
+    "",
+    `No WA aku: ${d.noWhatsapp || "-"}`
+  ];
+  window.open(`https://wa.me/${ADMIN_WA}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank");
 }
 
 function resetAgreementForm(){
@@ -201,16 +272,44 @@ function resetAgreementForm(){
   lastAgreement = null;
 }
 
+// Export PNG: bikin kartu rangkuman agreement (lengkap), bukan cuma kotak "terkonfirmasi"
 function exportAgreementPNG(){
-  const node = document.getElementById("agreementConfirm");
-  if(window.html2canvas){
-    html2canvas(node, {backgroundColor:"#131317"}).then(canvas=>{
-      const link = document.createElement("a");
-      link.download = "kinarya-project-agreement.png";
-      link.href = canvas.toDataURL();
-      link.click();
-    });
-  }
+  if(!lastAgreement || !window.html2canvas) return;
+  const d = lastAgreement;
+
+  const card = document.createElement("div");
+  card.style.cssText = "position:fixed;left:-9999px;top:0;width:520px;padding:28px;" +
+    "background:#131317;color:#F5F5F2;font-family:Poppins,sans-serif;border:1px solid #F5B93D;border-radius:14px;";
+
+  const title = document.createElement("div");
+  title.textContent = "✨ Kinarya · Project Agreement";
+  title.style.cssText = "font-size:18px;font-weight:700;color:#F5B93D;margin-bottom:16px;";
+  card.appendChild(title);
+
+  [
+    ["Nama Studio", d.namaStudio], ["Nama Circle", d.namaCircle],
+    ["Jenis Order", d.jenisOrder], ["No WhatsApp", d.noWhatsapp],
+    ["Deadline", d.deadline], ["Total Fee", d.totalFee],
+    ["Referensi", d.referensi], ["Link File", d.linkFile], ["Notes", d.notes]
+  ].forEach(([k,v])=>{
+    const row = document.createElement("div");
+    row.style.cssText = "margin-bottom:10px;font-size:13px;word-break:break-word;";
+    const key = document.createElement("div");
+    key.textContent = k;
+    key.style.cssText = "color:#9a9aa5;font-size:11px;";
+    const val = document.createElement("div");
+    val.textContent = v || "-";
+    row.appendChild(key); row.appendChild(val);
+    card.appendChild(row);
+  });
+
+  document.body.appendChild(card);
+  html2canvas(card, {backgroundColor:"#131317"}).then(canvas=>{
+    const link = document.createElement("a");
+    link.download = "kinarya-project-agreement.png";
+    link.href = canvas.toDataURL();
+    link.click();
+  }).finally(()=> card.remove());
 }
 
 // ---------- Feedback form ----------
@@ -251,16 +350,21 @@ if(feedbackForm){
 function sendFeedbackToWA(){
   const nama = document.getElementById("fb-nama").value.trim() || "Klien";
   const masukan = document.getElementById("fb-masukan").value.trim();
-  const text = `Halo kak Kinarya! Mau kasih masukan nih dari ${nama}:%0A${masukan}`;
-  window.open(`https://wa.me/${ADMIN_WA}?text=${text}`, "_blank");
+  const rating = selectedRating ? `Rating: ${selectedRating}\n` : "";
+  const text = `Halo kak Kinarya! Mau kasih masukan nih dari ${nama}:\n${rating}${masukan}`;
+  window.open(`https://wa.me/${ADMIN_WA}?text=${encodeURIComponent(text)}`, "_blank");
 }
 
 // ---------- Init ----------
 document.addEventListener("DOMContentLoaded", ()=>{
+  initWaLinks();
   renderPortfolio();
   setupTabs(".tabs");
   document.getElementById("videoModalClose")?.addEventListener("click", closeVideoModal);
   document.getElementById("videoModal")?.addEventListener("click", (e)=>{
     if(e.target.id === "videoModal") closeVideoModal();
+  });
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape") closeVideoModal();
   });
 });
