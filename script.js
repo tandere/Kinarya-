@@ -136,10 +136,63 @@ const PORTFOLIO = {
     ]}
   ],
   vroid: [
-    { group: "VRoid Model", ids: [
+    { group: "VRoid · Modeling", ids: [
+      "1iJO2mmAMkCCpsonu7f_rehoQO1L8kHGE",
+      "1BQGWC16Ic-4QWCeVTBt3pi7sESOVP3v6",
+      "1wErnjDLFLldMlTevxshSpRRoEysvDx-n",
+      "17uNNSc1nXWdiGSe9RMxdaxQIlGGjRFTE",
+      "1xq-JWDFb3NKIXpRdC8wI5il-ARzgX654",
+      "1qjaFd66XfsXgFcb3YHZvaF2lGva6PWpA",
+      "1PgV_4NrysPiO3zFYL5zzaef9YTQNiXpq",
+      "1fc7nYzIGBWfaWGPMeqJQlvGK9wJYaCcY",
+      "1-Q9LGrS9HQvUAb05gRaBDblhYzjNW6c3",
+      "1iOahn09vEtceceC19vRaKEXX5FJbevg_",
+      "1W_Rht3zrNzkA_bqQhuOLYV5Ydt-8OhbQ",
+      "12dDJCFwr2wFg9fGuSgIPFCMnyXJpOeoo",
+      "1c2kagLToZUrAc1n0M5dbk8iLnqn2m4NG",
+      "1oWBhRDKuQ7tfNJPWoraZH2UeZLHuYcEc"
+    ]},
+    { group: "VRoid · Teksturing", ids: [
+      "1W_Rht3zrNzkA_bqQhuOLYV5Ydt-8OhbQ",
+      "1EGpXj3DlS7Nzbi6sh3r8xbfQDpUIRf8S",
+      "1CtN4eKLX6h3WXPTgNEhONq7GVJc9Oo30",
+      "13O6bhd68V_3vplbtKi4TVH_R21PM2O6v",
+      "1Y_JjEBom8DPas_CK6pAkecS6aC4vJcnN",
       "1W-MgO5ONcl65s0Ouk-qPZw4EAvVxBYS_",
+      "1pwMZ2TYhiSojYJEWSCw9hJ5Ows63sYjp",
+      "1E4ZzQe2jCHkEPTxoz3-rZgEuPbC70pmC",
+      "1IjHFtdZr9S9iE519IS1ZNYbNcOqItUJT",
+      "1XFYdiKnaFAoOuat3U1FfYBh5cWGn5Ije",
+      "1nJm7iWQy5JB5j2D8DVIlFvH12-FMurrT",
+      "1LtKl3GxQ-P0r5yhQZt__npp7wVRDEOjs",
+      "1BL1V4EqlVCWFhubjEGqlDHkoFYRIZJyn"
+    ]},
+    { group: "VRoid · Rigging", ids: [
       "1qQxn0nnT57lBUXDKWmY-VdKgCtTQB_aJ",
-      "1t0uISgBCSG0HD88ascqzmHFVLUBc4KfA"
+      "1t0uISgBCSG0HD88ascqzmHFVLUBc4KfA",
+      "17_n0YrHX9dryrojG1XfNR09DYg6h1YXJ",
+      "1N_X_QymwWCv3wZTB2k3vWA64Gp-wC3VI",
+      "1-da-M4h9aF7aI79mamV0spmNS03nVlNR",
+      "1dk2Q1CWanMCtOEaSaDbrV3iHfFS7ioeG",
+      "1zf9UFZmGBzIIpGmJcPlMfl2iEG0nIE96",
+      "1B9XL3XQjWr_czyPxD02yUhjHPjQV6Bmx",
+      "1jbX0XI5zX97bMBe7yZL3W_p7TadU8GBt",
+      "1rjK0rZQkY_4Vn9Gq2pnco1BBb1noDTiI",
+      "1_5FeG7WmM6pScIgV5kPi1s9o_AkoCJOm",
+      "1hYKO_eUqKfQxhYdlKHbQflITmrCPdqov",
+      "1CxeDnCRBAOX8PdGrQtfZ85Tpa82Vwjoh",
+      "1wVUAJ4aZgvBDHGd59gYCIAKEXsh50yFK",
+      "12JZK-p-DYp2BGgxKIUhbIbVYPvqzcD8F",
+      "1iAK-TM2y_wxPRjCFerxUEh9-8aOxO0JJ",
+      "1oX9G0b4KhR3NcS49q0qju8rnw52zWv3i",
+      "1VE0NxS_-bI6Goe_hSYg_q7IPPL8WacSG",
+      "1ZX0mmM_0UJKcrlDbeG7abcVwNS88QyuJ",
+      "1IuVdLw5RR7yCuvuyDYvNuWNFuajuyPX8",
+      "1v6D5ty3LJ4EyFSVkFMsrFpD3bQpIJC7r",
+      "1O7CI-NdqKN7r9JQNimJ43CpsFRDAyaBP",
+      "1TCzbaTb2kpPPpI0fc4nEk656bHRhU1vu",
+      "1Wt_6bETS3K6wHo0L_ONdMoeu45nNGKfy",
+      "1f_wRuVkJ6m5CO-fltSYKevfyAWXkzylU"
     ]}
   ]
 };
