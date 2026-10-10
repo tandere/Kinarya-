@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinarya Admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="admin-shell">
+
+  <!-- LOGIN -->
+  <div id="loginScreen" class="admin-login">
+    <div class="form-card" style="width:100%;max-width:380px;">
+      <div style="text-align:center;margin-bottom:24px;">
+        <div style="font-size:1.4rem;font-weight:700;">🔒 Kinarya Admin</div>
+        <div style="color:var(--muted);font-size:.85rem;margin-top:6px;">Login khusus pemilik web</div>
+      </div>
+      <form id="loginForm">
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="login-email" placeholder="namakamu@gmail.com" required>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" id="login-password" placeholder="Password" required>
+        </div>
+        <div id="loginError" style="color:var(--red);font-size:.82rem;margin-bottom:14px;display:none;"></div>
+        <button type="submit" class="submit-btn">Masuk</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboardScreen" style="display:none;">
+    <div class="admin-topbar">
+      <div class="brand">🔒 Kinarya Admin</div>
+      <button class="wa-btn ghost" id="logoutBtn">Keluar</button>
+    </div>
+
+    <div class="admin-main">
+      <div class="section-head" style="text-align:left;margin-bottom:24px;">
+        <h2 style="font-size:1.5rem;">Daftar Project Agreement</h2>
+        <p style="margin:0;">Semua orang yang udah isi form booking muncul di sini. Klik <b>Terima</b> atau <b>Tolak</b> buat langsung chat klien lewat WhatsApp, atau <b>Selesai</b> kalau project udah kelar.</p>
+      </div>
+
+      <div class="admin-filter" id="filterBar">
+        <button class="tab-btn active" data-status="semua">Semua</button>
+        <button class="tab-btn" data-status="baru">Baru</button>
+        <button class="tab-btn" data-status="diterima">Diterima</button>
+        <button class="tab-btn" data-status="ditolak">Ditolak</button>
+        <button class="tab-btn" data-status="selesai">Selesai</button>
+      </div>
+
+      <div id="agreementList"></div>
+      <div id="emptyState" class="empty-state" style="display:none;">Belum ada project agreement yang masuk.</div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
