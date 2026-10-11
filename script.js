@@ -27,14 +27,13 @@ const PORTFOLIO = {
       "1oRF8DzHby2nBMTMfrNeTq20_oWUGVQ1_",
       "17nOoXYi7SB69mk3ARhiP6rzn7Qus9Ml0",
       "1zGtLvLhQCpeJLzgSjTeeHdU65yG3QcEA",
-      "1Qs61c8uo4SDSVQW91Ma9YweBLooNKsLr",
-      "1v8592K9hf1BTj1vokaL2oFMJh9MR94Cj"
+      "1Qs61c8uo4SDSVQW91Ma9YweBLooNKsLr"
     ]},
     { group: "VTuber Model", ids: [
       "1hfc1-IIIshrGfZOIv2kGZKXYNe99Qbmg",
       "1ynCjSOKq1RoZ_wSKhFCSUcLr-OlyqIcR",
       "1GwSOVyD6xE2k8d4yIe-4A6OZrlXHXmy9",
-      "10LGU0tYY3VOG8AkjtSfiVJsqQqPqs6Az"
+      "1_jcrxpe_vPROaUrd2kyTgUjmT3ds-Ss5"
     ]},
     { group: "Overlay · Starting Soon", ids: [
       "17N9k8f9gCmNDJK-QUCgQGwCVlZ3Y_nro",
@@ -108,9 +107,7 @@ const PORTFOLIO = {
       "16Tcime2xw2i-bjeK8lmC3X27EA23lV5d",
       "1LnygUtwcjrMF69t5GhUWqvdrRCdwMMoK",
       "1ES4m6zIH53k2lEeABgP1qarRtpJC77yZ",
-      "1qQ6VPWQHBFsmw_8ygTdONVWjP3RGQSb_",
       "1w6W4aOob2z-HHhDSI7aKNAaRhl4Y_dxP",
-      "1MpLe_UxRGs7mmrdwMs9F9eQ2oX3fLNA4",
       "1Tqxi3SQ3QJ-J5BSvPR_BuEHKngoJ9NxZ",
       "1al_KY2MZSNBQlgQbEdudfIKHN4zckvBL",
       "1UCzbNEzM4WVLUaxkLxDj4uvRgb1u_Axf",
@@ -137,35 +134,10 @@ const PORTFOLIO = {
   ],
   vroid: [
     { group: "VRoid · Modeling", ids: [
-      "1iJO2mmAMkCCpsonu7f_rehoQO1L8kHGE",
-      "1BQGWC16Ic-4QWCeVTBt3pi7sESOVP3v6",
-      "1wErnjDLFLldMlTevxshSpRRoEysvDx-n",
-      "17uNNSc1nXWdiGSe9RMxdaxQIlGGjRFTE",
-      "1xq-JWDFb3NKIXpRdC8wI5il-ARzgX654",
-      "1qjaFd66XfsXgFcb3YHZvaF2lGva6PWpA",
-      "1PgV_4NrysPiO3zFYL5zzaef9YTQNiXpq",
-      "1fc7nYzIGBWfaWGPMeqJQlvGK9wJYaCcY",
-      "1-Q9LGrS9HQvUAb05gRaBDblhYzjNW6c3",
-      "1iOahn09vEtceceC19vRaKEXX5FJbevg_",
-      "1W_Rht3zrNzkA_bqQhuOLYV5Ydt-8OhbQ",
-      "12dDJCFwr2wFg9fGuSgIPFCMnyXJpOeoo",
-      "1c2kagLToZUrAc1n0M5dbk8iLnqn2m4NG",
-      "1oWBhRDKuQ7tfNJPWoraZH2UeZLHuYcEc"
+      "18Ct4HhJ6MUdgL7ti0I-s8Mt1P6nfzALg"
     ]},
     { group: "VRoid · Teksturing", ids: [
-      "1W_Rht3zrNzkA_bqQhuOLYV5Ydt-8OhbQ",
-      "1EGpXj3DlS7Nzbi6sh3r8xbfQDpUIRf8S",
-      "1CtN4eKLX6h3WXPTgNEhONq7GVJc9Oo30",
-      "13O6bhd68V_3vplbtKi4TVH_R21PM2O6v",
-      "1Y_JjEBom8DPas_CK6pAkecS6aC4vJcnN",
-      "1W-MgO5ONcl65s0Ouk-qPZw4EAvVxBYS_",
-      "1pwMZ2TYhiSojYJEWSCw9hJ5Ows63sYjp",
-      "1E4ZzQe2jCHkEPTxoz3-rZgEuPbC70pmC",
-      "1IjHFtdZr9S9iE519IS1ZNYbNcOqItUJT",
-      "1XFYdiKnaFAoOuat3U1FfYBh5cWGn5Ije",
-      "1nJm7iWQy5JB5j2D8DVIlFvH12-FMurrT",
-      "1LtKl3GxQ-P0r5yhQZt__npp7wVRDEOjs",
-      "1BL1V4EqlVCWFhubjEGqlDHkoFYRIZJyn"
+      "1dHQ1Es9Ge5bFn2k_bz6aUvm5D43od8kF"
     ]},
     { group: "VRoid · Rigging", ids: [
       "1qQxn0nnT57lBUXDKWmY-VdKgCtTQB_aJ",
