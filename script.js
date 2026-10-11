@@ -156,8 +156,7 @@ const PORTFOLIO = {
       "1VE0NxS_-bI6Goe_hSYg_q7IPPL8WacSG",
       "1ZX0mmM_0UJKcrlDbeG7abcVwNS88QyuJ",
       "1IuVdLw5RR7yCuvuyDYvNuWNFuajuyPX8",
-      "1v6D5ty3LJ4EyFSVkFMsrFpD3bQpIJC7r",
-      "1O7CI-NdqKN7r9JQNimJ43CpsFRDAyaBP"
+      "1v6D5ty3LJ4EyFSVkFMsrFpD3bQpIJC7r"
     ]}
   ]
 };
