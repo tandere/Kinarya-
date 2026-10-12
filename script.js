@@ -140,15 +140,13 @@ const PORTFOLIO = {
       "1dHQ1Es9Ge5bFn2k_bz6aUvm5D43od8kF"
     ]},
     { group: "VRoid · Rigging", ids: [
-      "1qQxn0nnT57lBUXDKWmY-VdKgCtTQB_aJ",
       "1t0uISgBCSG0HD88ascqzmHFVLUBc4KfA",
       "17_n0YrHX9dryrojG1XfNR09DYg6h1YXJ",
       "1N_X_QymwWCv3wZTB2k3vWA64Gp-wC3VI",
-      "1-da-M4h9aF7aI79mamV0spmNS03nVlNR",
       "1dk2Q1CWanMCtOEaSaDbrV3iHfFS7ioeG",
+      "1-da-M4h9aF7aI79mamV0spmNS03nVlNR",
       "1B9XL3XQjWr_czyPxD02yUhjHPjQV6Bmx",
       "1jbX0XI5zX97bMBe7yZL3W_p7TadU8GBt",
-      "1rjK0rZQkY_4Vn9Gq2pnco1BBb1noDTiI",
       "1_5FeG7WmM6pScIgV5kPi1s9o_AkoCJOm",
       "1CxeDnCRBAOX8PdGrQtfZ85Tpa82Vwjoh",
       "1wVUAJ4aZgvBDHGd59gYCIAKEXsh50yFK",
