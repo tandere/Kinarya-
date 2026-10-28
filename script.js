@@ -35,6 +35,10 @@ const PORTFOLIO = {
       "1GwSOVyD6xE2k8d4yIe-4A6OZrlXHXmy9",
       "1_jcrxpe_vPROaUrd2kyTgUjmT3ds-Ss5"
     ]},
+    { group: "VTuber Puppet", ids: [
+     "108pdpVL3zt7yq9zTgkERz-hT6c55Yi38",
+     "1vqjZ4gYTVV0IGAsEUymmjNfs4gYkLbCE"
+    ]},
     { group: "Overlay · Starting Soon", ids: [
       "17N9k8f9gCmNDJK-QUCgQGwCVlZ3Y_nro",
       "1IMQCWBkduDrPThcvHvL3jJrG04uTgYpI",
@@ -48,6 +52,8 @@ const PORTFOLIO = {
       "1DuxoHGPEwJP0qTQvfmpaEs7dOP0ZS5kE",
       "1W9zgWlcqdhPdY7qjoZdzgm0DQ8WwBrSk",
       "14nLXHIH5G0lSS5RfF902pv2Hy4vT7-8g",
+      "1uCeJa4lahN1FWWME_Kgzvcka2l1dsja5",
+      "1oWiX7CmuNpyYzqa-cUN9VlyP8OOTPrXq"
       "1nJwC-ibKtD0VezuBWU3R7uZbEq48FIbL"
     ]},
     { group: "Overlay · Be Right Back", ids: [
@@ -76,6 +82,7 @@ const PORTFOLIO = {
       "1LZx71xxdCegf6P3jf94m36Am3Lc4jebJ",
       "132B_WVGFKBl3W5NLifr52Q5MrxJtKeb9",
       "1g5mW1E2RAmgtBFYFXbVR9iOZKUu5i1hV",
+      "1IzTSrEpG_YAEgUcINh9C4S_zZoBtd1OJ",
       "1dbHgKc71kOWNJh1E6-6MwDtx08Fbeyag"
     ]},
     { group: "Overlay · Boobs Overlays", ids: [
@@ -112,6 +119,8 @@ const PORTFOLIO = {
       "1al_KY2MZSNBQlgQbEdudfIKHN4zckvBL",
       "1UCzbNEzM4WVLUaxkLxDj4uvRgb1u_Axf",
       "1JTt6rvHgjX28o_TymSMaX_2R7kQae1oX",
+      "1MOwxEdLWeAYTzEe9OzsMTozOh6SMufYF", 
+      "1vwW6l_2MDb_EqIluISei32Gw235x53wV",
       "1UE56Oida2pSo51zm9ZOjOixIPEsgr7BK"
     ]},
     { group: "Animasi Banner", ids: [
@@ -129,6 +138,8 @@ const PORTFOLIO = {
       "1HsMSKHIkUtmkfYIztYjaQPgjwyhmnJlL",
       "14y98UWuVvfMurUbSrEaXXFttw84HqEHl",
       "1LUdneTxKeCZszCzwtOmEPXiiKK4mYF1Q",
+      "1RPwTj0TE77awQR3UM6wZUivOVADFwOwD", 
+      "1jylcy5za_LhsvAOR2H0itKJjJ1XafYEu",
       "1uyr1ZNde-whQKUDKgIAAqWKKUvbsY3_7"
     ]}
   ],
