@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinarya Admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+
+<div class="admin-shell">
+
+  <!-- LOGIN -->
+  <div id="loginScreen" class="admin-login">
+    <div class="form-card login-card">
+      <div class="login-head">
+        <div class="login-title">🔒 Kinarya Admin</div>
+        <div class="login-sub">Login khusus pemilik web</div>
+      </div>
+      <form id="loginForm">
+        <div class="field">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="namakamu@gmail.com" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
+        </div>
+        <div id="loginError" class="login-error" role="alert"></div>
+        <button type="submit" class="submit-btn">Masuk</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboardScreen">
+    <div class="admin-topbar">
+      <div class="brand">🔒 Kinarya Admin</div>
+      <button type="button" class="wa-btn ghost" id="logoutBtn">Keluar</button>
+    </div>
+
+    <div class="admin-main">
+
+      <!-- Tab utama -->
+      <div class="tabs main-tabs" id="mainTabs">
+        <button type="button" class="tab-btn active" data-panel="panelAgreements">📋 Project Agreement <span class="count" id="countAgreements">0</span></button>
+        <button type="button" class="tab-btn" data-panel="panelFeedbacks">💬 Masukan Klien <span class="count" id="countFeedbacks">0</span></button>
+      </div>
+
+      <!-- PANEL: Project Agreement -->
+      <div id="panelAgreements" class="tab-panel active">
+        <div class="admin-head">
+          <h2>Daftar Project Agreement</h2>
+          <p>Semua orang yang udah isi form booking muncul di sini. Klik <b>Terima</b> atau <b>Tolak</b> buat langsung chat klien lewat WhatsApp, atau <b>Selesai</b> kalau project udah kelar.</p>
+        </div>
+
+        <div class="admin-filter" id="filterBar">
+          <button type="button" class="tab-btn active" data-status="semua">Semua</button>
+          <button type="button" class="tab-btn" data-status="baru">Baru</button>
+          <button type="button" class="tab-btn" data-status="diterima">Diterima</button>
+          <button type="button" class="tab-btn" data-status="ditolak">Ditolak</button>
+          <button type="button" class="tab-btn" data-status="selesai">Selesai</button>
+        </div>
+
+        <div id="agreementList"></div>
+        <div id="emptyState" class="empty-state">Belum ada project agreement yang masuk.</div>
+      </div>
+
+      <!-- PANEL: Masukan Klien -->
+      <div id="panelFeedbacks" class="tab-panel">
+        <div class="admin-head">
+          <h2>Masukan Klien</h2>
+          <p>Rating kepuasan dan masukan yang dikirim klien lewat form di halaman utama. Yang terbaru ada di paling atas.</p>
+        </div>
+
+        <div id="feedbackSummary"></div>
+        <div id="feedbackList"></div>
+        <div id="feedbackEmpty" class="empty-state">Belum ada masukan dari klien.</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="assets/js/firebase-config.js"></script>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>
