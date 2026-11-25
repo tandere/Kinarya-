@@ -15,13 +15,17 @@ const PORTFOLIO = {
       "1oRF8DzHby2nBMTMfrNeTq20_oWUGVQ1_",
       "17nOoXYi7SB69mk3ARhiP6rzn7Qus9Ml0",
       "1zGtLvLhQCpeJLzgSjTeeHdU65yG3QcEA",
-      "1Qs61c8uo4SDSVQW91Ma9YweBLooNKsLr"
+      "1Qs61c8uo4SDSVQW91Ma9YweBLooNKsLr",
+      "1yVBKqJ6JeAQPi64Tg4y-bp-8jxExb4Es"
     ]},
     { group: "VTuber Model", ids: [
       "1hfc1-IIIshrGfZOIv2kGZKXYNe99Qbmg",
       "1ynCjSOKq1RoZ_wSKhFCSUcLr-OlyqIcR",
       "1GwSOVyD6xE2k8d4yIe-4A6OZrlXHXmy9",
-      "1_jcrxpe_vPROaUrd2kyTgUjmT3ds-Ss5"
+      "1_jcrxpe_vPROaUrd2kyTgUjmT3ds-Ss5",
+      "1FSs0iCs3KeXh4HhICCK3L2TnXrqQoiA-",
+      "1MqOScBA7PQgj6GBEO3fbRaQN5Q7qIjkt",
+      "1qgfG3pIrFikzJMQ_QBF34ikR4Z8nzePo"
     ]},
     { group: "VTuber Puppet", ids: [
       "108pdpVL3zt7yq9zTgkERz-hT6c55Yi38",
@@ -42,16 +46,20 @@ const PORTFOLIO = {
       "14nLXHIH5G0lSS5RfF902pv2Hy4vT7-8g",
       "1uCeJa4lahN1FWWME_Kgzvcka2l1dsja5",
       "1oWiX7CmuNpyYzqa-cUN9VlyP8OOTPrXq",
-      "1nJwC-ibKtD0VezuBWU3R7uZbEq48FIbL"
+      "1nJwC-ibKtD0VezuBWU3R7uZbEq48FIbL",
+      "1GM2_oVXsuXcW1pGmzpUhOKEOv1qCzIVa",
+      "19tUz8GsnrmzY28dPV-jP9VPvDAOQeGzM"
     ]},
     { group: "Overlay · Be Right Back", ids: [
       "1RLfrRH8AY4BRPvd6z33CcP6e-lKWwX3y",
       "1IHCTsLJoRVIEKYiNwALPa4B8ZTwaFVzo",
-      "1iO29ZgdLdRlIh_pL2Odu2VGxJv-P1gaP"
+      "1iO29ZgdLdRlIh_pL2Odu2VGxJv-P1gaP",
+      "1ROzKQpHxBeNCmecZbWoCpKDVJGJ28gAQ"
     ]},
     { group: "Overlay · Stream End", ids: [
       "1-LsrFZBJKUzVxbo0zZ6BgrAeFivxlLxL",
-      "1n8vHosMGhGBNB6nIjanxdDLLkrJUPBmT"
+      "1n8vHosMGhGBNB6nIjanxdDLLkrJUPBmT",
+      "18Yg08YPjcJ4iGA2075TxwztdfjQ7Hymg"
     ]},
     { group: "Overlay · Animation", ids: [
       "1YAHuCMmDYUEerw0DcXGPeKbuQ_N3rb2Y"
@@ -71,7 +79,10 @@ const PORTFOLIO = {
       "132B_WVGFKBl3W5NLifr52Q5MrxJtKeb9",
       "1g5mW1E2RAmgtBFYFXbVR9iOZKUu5i1hV",
       "1IzTSrEpG_YAEgUcINh9C4S_zZoBtd1OJ",
-      "1dbHgKc71kOWNJh1E6-6MwDtx08Fbeyag"
+      "1dbHgKc71kOWNJh1E6-6MwDtx08Fbeyag",
+      "1f2tRuwZloEcbkvTKKObUI1cZMRsIIKfY",
+      "19GtuCUyXsrbFmI8gvWSsQ7rPJ38R83PZ",
+      "1bWZmNS1IKCg1WXMeMc0vHq0WYsA8OvHq"
     ]},
     { group: "Overlay · Boobs Overlays", ids: [
       "13LGolkyX-SXVfUKANGwhjjYJLWC8rktT",
@@ -85,7 +96,8 @@ const PORTFOLIO = {
     { group: "Animasi Logo", ids: [
       "1V4NTCabxTjG4YE5wHgSx0zzCaPNxc4Fq",
       "15QpOw8UM0wi9G9C3pe4IwW0ZjY3OSUpF",
-      "17dfUF2EM1aHhy6kcvjer5zjYMY3CyzLk"
+      "17dfUF2EM1aHhy6kcvjer5zjYMY3CyzLk",
+      "10ygQ6NjC146Hu7lbRkzdpdzj_efHRhVC"
     ]},
     { group: "Animasi Emote", ids: [
       "1gbqWqjKox0vdWj8byh--sySdWqE5qjux",
