@@ -479,3 +479,73 @@ body::before{
   .js .section-head .eyebrow,
   .js .section-head p{opacity:1;transform:none;}
 }
+
+
+/* ---------- 16. Mode slide ----------
+   Aktif lewat script.js (initSlides), hanya di halaman utama.
+   Satu bagian tampil per layar, pindah lewat menu bawah / menu atas / geser. */
+body.slide-mode{overflow:hidden;height:100vh;height:100dvh;}
+body.slide-mode .nav{position:fixed;left:0;right:0;}
+body.slide-mode .slide{
+  display:none;position:fixed;left:0;right:0;
+  top:var(--nav-h,68px);bottom:var(--dock-h,76px);
+  overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+  padding-top:clamp(28px,4vw,44px);padding-bottom:36px;
+}
+body.slide-mode .slide.active{display:block;}
+body.slide-mode .hero.slide{padding-top:clamp(40px,6vw,64px);}
+body.slide-mode .slide footer{margin-top:40px;}
+
+@keyframes slideFromRight{from{opacity:0;transform:translateX(44px);}to{opacity:1;transform:none;}}
+@keyframes slideFromLeft{from{opacity:0;transform:translateX(-44px);}to{opacity:1;transform:none;}}
+body.slide-mode .slide.from-right{animation:slideFromRight .4s ease both;}
+body.slide-mode .slide.from-left{animation:slideFromLeft .4s ease both;}
+
+/* Menu atas: bagian yang sedang dibuka */
+.nav-links a.active{color:var(--gold);}
+.nav-links a.active::after{transform:scaleX(1);}
+
+/* Menu bawah (dock) */
+.slide-dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  display:flex;align-items:center;gap:8px;
+  padding:8px 14px calc(8px + env(safe-area-inset-bottom,0px));
+  background:rgba(28,15,18,.82);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);
+}
+.dock-items{display:flex;flex:1;justify-content:center;gap:6px;overflow-x:auto;scrollbar-width:none;}
+.dock-items::-webkit-scrollbar{display:none;}
+.dock-item{
+  flex:none;display:flex;flex-direction:column;align-items:center;gap:2px;
+  min-width:78px;padding:7px 12px;border-radius:12px;
+  border:1px solid transparent;background:transparent;
+  color:var(--muted);font-size:.74rem;font-weight:500;
+  transition:background .2s ease,color .2s ease,border-color .2s ease,transform .15s ease;
+}
+.dock-item .di{font-size:1.25rem;line-height:1;}
+.dock-item:hover{color:var(--white);transform:translateY(-2px);}
+.dock-item.active{color:var(--gold);background:rgba(245,185,61,.16);border-color:rgba(245,185,61,.5);}
+.dock-arrow{
+  flex:none;width:40px;height:40px;border-radius:50%;
+  border:1px solid var(--line);background:var(--panel);color:var(--white);
+  font-size:1.4rem;line-height:1;padding:0 0 3px;
+  display:flex;align-items:center;justify-content:center;
+}
+.dock-arrow:hover:not(:disabled){border-color:var(--gold);color:var(--gold);}
+.dock-arrow:disabled{opacity:.3;cursor:not-allowed;}
+
+@media(max-width:760px){
+  /* Di HP menu bawah sudah menggantikan menu ☰ */
+  body.slide-mode .nav-toggle{display:none;}
+}
+@media(max-width:600px){
+  .slide-dock{padding-left:6px;padding-right:6px;gap:0;}
+  .dock-arrow{display:none;}
+  .dock-items{gap:2px;justify-content:space-between;}
+  .dock-item{flex:1;min-width:0;padding:6px 2px;font-size:.62rem;}
+  .dock-item .di{font-size:1.15rem;}
+  body.slide-mode .slide{padding-top:28px;padding-bottom:28px;}
+  body.slide-mode .hero.slide{padding-top:40px;}
+}
